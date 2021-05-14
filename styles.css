@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C44343;
+  height: 100vh;
+}
+
+.main{
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-main{
+  background-color: #fafafa;
+  padding: 3%;
+}
+
+.title{
+  font-family:monospace, sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 2%;
+  color: #45C4C4;
+}
+
+.options-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 2px red solid; */
+  padding:5% 0;
+}
+
+.ppt-text{
+  font-size: 1.4rem;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+i {
+  font-size: 500%;
+}
+
+.c {
+  border: 1.9px rgb(109, 109, 109) solid;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+.c:hover{
+  background-color: #b0dddd;
+}
+
+.score-section{
+  margin-top: 5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4{
+  font-size: 1.7rem;
+}
+
+.results{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  flex-wrap:wrap;
+}
+
+.result {
+  /* border: 2px red solid; */
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 2% 6%;
+  background-color: rgb(27, 27, 27);
+  color: #fafafa;
+  width: 48%;
+}
+
+.computer .human{
+  margin-right: 1%;
+}
+
+span{
+  font-size: 3rem;
+}
+
+div.result-text{
+  border: 2px rgb(54, 54, 54) solid;
+  width: 100%;
+  margin-top: 13px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.result-text-span{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
