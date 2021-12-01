@@ -1,3 +1,3 @@
 # Rock-Paper-Scissors
 
-https://js-rockpapperscissors.netlify.app/
+https://js-rockpaperscissors.netlify.app/
