@@ -24,11 +24,11 @@ let humanChoice;
     }
 
     if(item.classList.contains("0")){
-      humanChoice = 0; //piedra
+      humanChoice = 0; //rock
     } else if (item.classList.contains("1")){
-      humanChoice = 1; // papel
+      humanChoice = 1; // paper
     } else {
-      humanChoice = 2; //tijera
+      humanChoice = 2; //scissors
     };
 
     // random computer choice
@@ -37,17 +37,17 @@ let humanChoice;
     switch(humanChoice){
       case 0:
         if(computerChoice === 1){
-          // piedra-papel
+          // rock-paper
           computerPoints++;
-          spanResult.innerText = "piedra vs. PAPEL";
+          spanResult.innerText = "rock vs. paper";
           spanBox.style.backgroundColor = "#ff868a";
         } else if (computerChoice === 2){
-          // piedra-tijera
+          // rock-scissors
           humanPoints++;
-          spanResult.innerText = "piedra vs. TIJERA";
+          spanResult.innerText = "rock vs. scissors";
           spanBox.style.backgroundColor = "#13d9b4";
         } else if (computerChoice === 0){
-          // piedra-piedra
+          // rock-rock
           humanPoints = humanPoints;
           computerPoints = computerPoints;
           spanResult.innerText = "EMPATE";
@@ -56,17 +56,17 @@ let humanChoice;
       break;
       case 1:
         if(computerChoice === 0){
-          // papel-piedra
+          // paper-rock
           humanPoints++;
-          spanResult.innerText = "papel vs. PIEDRA";
+          spanResult.innerText = "paper vs. rock";
           spanBox.style.backgroundColor = "#13d9b4";
         } else if (computerChoice === 2){
-          // papel-tijera
+          // paper-scissors
           computerPoints++;
-          spanResult.innerText = "papel vs. TIJERA";
+          spanResult.innerText = "paper vs. scissors";
           spanBox.style.backgroundColor = "#ff868a";
         } else if (computerChoice === 1){
-          // papel-papel
+          // paper-paper
           humanPoints = humanPoints;
           computerPoints = computerPoints;
           spanResult.innerText = "EMPATE";
@@ -75,17 +75,17 @@ let humanChoice;
       break;
       case 2:
         if(computerChoice === 0){
-          // tijera-piedra
+          // scissors-rock
           computerPoints++;
-          spanResult.innerText = "tijera vs. PIEDRA";
+          spanResult.innerText = "scissors vs. rock";
           spanBox.style.backgroundColor = "#ff868a";
         } else if (computerChoice === 1){
-          // tijera-papel
+          // scissors-paper
           humanPoints++;
-          spanResult.innerText = "tijera vs. PAPEL";
+          spanResult.innerText = "scissors vs. paper";
           spanBox.style.backgroundColor = "#13d9b4";
         } else if (computerChoice === 2){
-          // tijera-tijera
+          // scissors-scissors
           humanPoints = humanPoints;
           computerPoints = computerPoints;
           spanResult.innerText = "EMPATE";
@@ -99,13 +99,13 @@ let humanChoice;
     if (humanPoints === 3){
       humanPoints = 0;
       computerPoints = 0;
-      spanResult.innerText = "Ha ganado! Felicidades, no es débil..";
+      spanResult.innerText = "Congrats! You win.";
       spanBox.style.backgroundColor = "#13d9b4";
       document.body.style.backgroundColor = "#13d9b4";
     } else if (computerPoints === 3){
       humanPoints = 0;
       computerPoints = 0;
-      spanResult.innerText = "Felicidades inútil, LA COMPUTADORA HA GANADO!";
+      spanResult.innerText = "Sorry, Computer wins!";
       spanBox.style.backgroundColor = "#ff868a";
       document.body.style.backgroundColor = "#ff868a";
     }
