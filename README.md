@@ -1,1 +1,1 @@
-# piedra-papel-tijera
+# Rock-Paper-Scissors
